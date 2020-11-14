@@ -5,6 +5,12 @@
   position: relative;
   background: $color-4;
 
+  i {
+    font-size: 1.5rem;
+    margin: 20px 0;
+    color: $color-3;
+  }
+
   .data {
     position: absolute;
     right: 42px;

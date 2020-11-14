@@ -8,6 +8,15 @@
     font-size: 1.4rem;
     color: $color-3;
   }
+  .icon {
+    margin: 16px auto;
+    width: 100%;
+    text-align: center;
+    i {
+      font-size: 1.6rem;
+      color: $color-3;
+    }
+  }
   ul {
     width: 100%;
     padding: 14px 0 0;
@@ -27,17 +36,17 @@
       }
       p {
         text-align: left;
-        font-size: .9rem;
+        font-size: 0.9rem;
         font-family: $font-3;
       }
       span {
         text-align: right;
-        
+
         button {
           background: $color-1;
           color: $color-4;
           padding: 10px 24px 8px;
-          transition: .2s;
+          transition: 0.2s;
           border-radius: 20px;
           font-size: 0.9rem;
 
