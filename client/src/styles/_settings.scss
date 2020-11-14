@@ -1,0 +1,99 @@
+@font-face {
+  font-family: "font-1";
+  src: url(../assets/fonts/JosefinSans-ExtraLight.ttf);
+}
+@font-face {
+  font-family: "font-2";
+  src: url(../assets/fonts/JosefinSans-Regular.ttf);
+}
+@font-face {
+  font-family: "font-3";
+  src: url(../assets/fonts/JosefinSans-Bold.ttf);
+}
+
+$font-1: "font-1", sans-serif;
+$font-2: "font-2", serif;
+$font-3: "font-3", serif;
+
+$color-1: #ff7b77;
+$color-2: #ffd0c4;
+$color-3: rgb(0, 22, 44);
+$color-4: #fdeeee;
+$black: rgb(40, 40, 40);
+$white: rgb(253, 253, 253);
+$shadow: rgb(219, 218, 218);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  outline: none;
+  border: none;
+  text-decoration: none;
+
+  &::selection {
+    background: $color-1;
+  }
+}
+a,
+a:visited {
+  color: $color-3;
+}
+input,
+textarea {
+  resize: none;
+  border-radius: 20px;
+  width: 270px;
+  font-family: $font-1;
+  background: $white;
+}
+textarea {
+  &:focus {
+    box-shadow: 0 0 4px rgba(0, 22, 44, 0.1);
+  }
+}
+button,
+input[type="submit"] {
+  background: $color-2;
+  color: $color-1;
+  font-family: $font-3;
+  cursor: pointer;
+  transition: 0.2s;
+  margin: 0;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  border-radius: 20px 6px 20px 20px;
+
+  &:hover {
+    background: $color-1;
+    color: $color-2;
+  }
+}
+input[type="checkbox"] {
+  box-shadow: none;
+  width: 20px;
+  margin: 10px 0;
+}
+i {
+  transition: 0.15s;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+body {
+  font-family: $font-2;
+  line-height: 1.4rem;
+  background: $white;
+  color: $color-3;
+}
+.error {
+  color: red;
+  font-weight: bold;
+}
+.success {
+  color: green;
+  font-weight: bold;
+}

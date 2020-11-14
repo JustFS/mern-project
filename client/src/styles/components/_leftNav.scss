@@ -1,0 +1,81 @@
+.left-nav-container {
+  position: relative;
+
+  .icons {
+    position: fixed;
+    z-index: 10;
+
+    @media screen and(max-width: 590px) {
+      margin: 2px 0 0 -9px;
+    }
+
+    .icons-bis {
+      position: absolute;
+      left: 10px;
+
+      a {
+        transition: 0.1s;
+        display: inline-block;
+
+        &:before {
+          transition: .15s ease;
+          transform: scale(0);
+          transform-origin: center;
+          z-index: -10;
+          content: "";
+          height: 45px;
+          width: 45px;
+          position: absolute;
+          background: $color-4;
+          border-radius: 50px;
+        }
+
+        &:hover {
+          transform: scale(1.02);
+        }
+        &:hover::before {
+          transform: scale(1);
+          @media screen and(max-width: 590px) {
+            background: $color-1;
+            height: 34px;
+            width: 34px;
+          }
+        }
+
+        img {
+          @media screen and(max-width: 590px) {
+            height: 34px;
+            width: 34px;
+          }
+        }
+      }
+
+      .active-left-nav {
+        position: relative;
+
+        &::after {
+          content: "";
+          height: 40px;
+          width: 5px;
+          position: absolute;
+          background: $color-1;
+          left: -7px;
+          bottom: 8px;
+          border-radius: 40px;
+          transform: scaleY(0);
+          animation: scale 1.5s ease forwards;
+
+          @keyframes scale {
+            to {
+              transform: scaleY(1);
+            }
+          }
+          @media screen and(max-width: 590px) {
+            height: 33px;
+            left: -8px;
+          }
+        }
+      }
+    }
+  }
+}

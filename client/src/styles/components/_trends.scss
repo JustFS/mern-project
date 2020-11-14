@@ -1,0 +1,64 @@
+.trending-container {
+  background: $color-2;
+  border-radius: 20px;
+  margin-bottom: 14px;
+  padding: 20px;
+  width: 356px;
+
+  h4 {
+    font-size: 1.4rem;
+    color: $color-3;
+    margin-bottom: 12px;
+  }
+  ul {
+
+    li {
+      margin: 5px 0;
+      display: grid;
+      align-items: center;
+      grid-template-columns: 68px 1fr;
+      background: $color-4;
+      border-radius: 20px;
+      padding: 16px;
+      box-shadow: 5px 7px 20px 9px #ff7c7732;
+      transition: .2s;
+
+      &:hover {
+        transform: scale(1.01);
+        box-shadow: none;
+      }
+
+      div {
+        height: 56px;
+      }
+
+      img,
+      iframe {
+        height: 56px;
+        width: 56px;
+        border-radius: 20px;
+        object-fit: cover;
+        box-shadow: 0 0 4px rgba(51, 51, 51, 0.233);
+      }
+      .trend-content {
+        position: relative;
+        height: 56px;
+
+        p {
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 2;
+          overflow: hidden;
+          font-size: .9rem;
+        }
+        span {
+          color: $color-1;
+          font-family: $font-3;
+          position: absolute;
+          right: 6px;
+          bottom: -11px;
+        }
+      }
+    }
+  }
+}
