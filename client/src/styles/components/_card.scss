@@ -53,6 +53,7 @@
       display: flex;
       justify-content: space-between;
       margin: 2px 0 4px;
+      min-height: 35px;
 
       @media screen and(max-width: 590px) {
         margin: 12px 0 14px;
