@@ -4,7 +4,7 @@
 
 Start server : `npm start`
 
-Start client : `cd client-react` + `npm start`
+Start client : `cd client` + `npm start`
 
 _____________________________
 
