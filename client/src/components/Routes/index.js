@@ -7,15 +7,14 @@ import Navbar from '../Navbar';
 
 const index = () => {
   return (
-    <Router>
+    <div>
       <Navbar />
-      <Switch>
-        <Route path="/" exact component={Home} />
-        <Route path="/profil" exact component={Profil} />
-        <Route path="/trending" exact component={Trending} />
-        <Redirect to="/" />
-      </Switch>
-    </Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/profil" element={<Profil />} />
+        <Route path="/trending" element={<Trending />} />
+      </Routes>
+    </div>
   );
 };
 
