@@ -30,7 +30,7 @@ const App = () => {
     <UidContext.Provider value={uid}>
       <Routes />
     </UidContext.Provider>
-  );
-};
+  )
+}
 
 export default App;
